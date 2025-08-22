@@ -1,14 +1,16 @@
-[tool.poetry]
-name = "beyond the bookshelf"
+[project]
+name = "beyond-the-bookshelf"
 version = "0.1.0"
-description = ""
-authors = ["Takib Yeasar <mdtakibyeasar@gmail.com>"]
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.116.1",
+    "langchain-chroma>=0.2.5",
+    "langchain-community>=0.3.27",
+    "langchain-openai>=0.3.31",
+    "numpy>=2.3.2",
+    "pandas>=2.3.2",
+    "python-dotenv>=1.1.1",
+    "transformers>=4.55.3",
+]
